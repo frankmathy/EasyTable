@@ -16,6 +16,8 @@
 		C8DB184C174D0F1A00FA9662 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = C8DB184B174D0F1A00FA9662 /* Default.png */; };
 		C8DB184E174D0F1A00FA9662 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C8DB184D174D0F1A00FA9662 /* Default@2x.png */; };
 		C8DB1850174D0F1A00FA9662 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C8DB184F174D0F1A00FA9662 /* Default-568h@2x.png */; };
+		C8DB1859174D0FC300FA9662 /* ETViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C8DB1857174D0FC300FA9662 /* ETViewController.m */; };
+		C8DB185A174D0FC300FA9662 /* ETViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C8DB1858174D0FC300FA9662 /* ETViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +34,9 @@
 		C8DB184B174D0F1A00FA9662 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		C8DB184D174D0F1A00FA9662 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		C8DB184F174D0F1A00FA9662 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		C8DB1856174D0FC300FA9662 /* ETViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ETViewController.h; sourceTree = "<group>"; };
+		C8DB1857174D0FC300FA9662 /* ETViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ETViewController.m; sourceTree = "<group>"; };
+		C8DB1858174D0FC300FA9662 /* ETViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ETViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +56,9 @@
 		C8DB182D174D0F1A00FA9662 = {
 			isa = PBXGroup;
 			children = (
+				C8DB1856174D0FC300FA9662 /* ETViewController.h */,
+				C8DB1857174D0FC300FA9662 /* ETViewController.m */,
+				C8DB1858174D0FC300FA9662 /* ETViewController.xib */,
 				C8DB183F174D0F1A00FA9662 /* EasyTable */,
 				C8DB1838174D0F1A00FA9662 /* Frameworks */,
 				C8DB1837174D0F1A00FA9662 /* Products */,
@@ -155,6 +163,7 @@
 				C8DB184C174D0F1A00FA9662 /* Default.png in Resources */,
 				C8DB184E174D0F1A00FA9662 /* Default@2x.png in Resources */,
 				C8DB1850174D0F1A00FA9662 /* Default-568h@2x.png in Resources */,
+				C8DB185A174D0FC300FA9662 /* ETViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -167,6 +176,7 @@
 			files = (
 				C8DB1846174D0F1A00FA9662 /* main.m in Sources */,
 				C8DB184A174D0F1A00FA9662 /* ETAppDelegate.m in Sources */,
+				C8DB1859174D0FC300FA9662 /* ETViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -246,6 +256,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "EasyTable/EasyTable-Prefix.pch";
 				INFOPLIST_FILE = "EasyTable/EasyTable-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -257,6 +268,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "EasyTable/EasyTable-Prefix.pch";
 				INFOPLIST_FILE = "EasyTable/EasyTable-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
