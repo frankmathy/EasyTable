@@ -7,6 +7,7 @@
 //
 
 #import "ETViewController.h"
+#import "ETDetailViewController.h"
 
 @interface ETViewController ()
 
@@ -59,6 +60,7 @@
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     if (cell == nil) {
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
+        cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
     }
     cell.textLabel.text = [[NSString alloc] initWithFormat:@"Section %d - Row %d", indexPath.section, indexPath.row];
 
@@ -68,6 +70,7 @@
 - (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section {
     return [NSString stringWithFormat:@"Section %d", section];
 }
+
 
 /*
 // Override to support conditional editing of the table view.
@@ -112,13 +115,9 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    // Navigation logic may go here. Create and push another view controller.
-    /*
-     <#DetailViewController#> *detailViewController = [[<#DetailViewController#> alloc] initWithNibName:@"<#Nib name#>" bundle:nil];
-     // ...
-     // Pass the selected object to the new view controller.
-     [self.navigationController pushViewController:detailViewController animated:YES];
-     */
+    ETDetailViewController *detailController = [[ETDetailViewController alloc] initWithNibName:@"ETDetailViewController" bundle:nil];
+    [self.navigationController pushViewController:detailController animated:YES];
+    detailController.valueLabel.text = [NSString stringWithFormat:@"Section %d - Row %d", indexPath.section, indexPath.row];
 }
 
 @end

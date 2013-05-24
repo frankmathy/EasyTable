@@ -8,6 +8,7 @@
 
 #import "ETAppDelegate.h"
 #import "ETViewController.h"
+#import "ETDetailViewController.h"
 
 @implementation ETAppDelegate
 
@@ -18,8 +19,11 @@
     self.window.backgroundColor = [UIColor whiteColor];
     
     ETViewController *tableViewController = [[ETViewController alloc] initWithNibName:@"ETViewController" bundle:nil];
-    self.window.rootViewController = tableViewController;
+
+    UINavigationController *navController = [[UINavigationController alloc] initWithRootViewController:tableViewController];
     
+    self.window.rootViewController = navController;
+        
     [self.window makeKeyAndVisible];
     return YES;
 }
